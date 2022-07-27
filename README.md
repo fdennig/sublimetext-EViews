@@ -1,15 +1,14 @@
 # *EViews* Package for Sublime Text
 
-## How to set up the package
-- Save the `EViews` folder into the subfolder of the Sublime Text application called `Data\\Packages\\User`
-- If you are using the *Mariana* color scheme, then you are good to go
-- If you choose a different color scheme, the following steps will ensure that the color coding treats %variables and !variables correctly
-	- If you don't follow these substeps, things will still work, but some concepts might not be colored at all or colored consistently
-	- From within Sublime Text, having selected the desired Color Scheme (the `scheme` is important, not the `theme`), hit `ctrl`+`shift`+`P` and type "customize color scheme" and hit enter. 
-	- Two files will open side by side, on the left the settings of your color scheme (which you can't edit) and on the right the skeleton for the settings you will override
-	- Copy the contents of `Mariana.sublime-color-scheme` into the file on the right
-	- The color codes in lines 26, 33, 40, and 46 need to be changed to the colors that are used in the color scheme (file on the left) for the corresponding "scopes". E.g. for the "constant.numeric" scope, simply search that term in the file on the left, identify the color code associated with that scope, and copy that into line 40 on the right.
+EViews language support for [Sublime Text](http://www.sublimetext.com/)
 
+- Syntax highlighting
+- Build system
+- Snippets
+- Specific support for World Bank developers of MFMOD
+
+# Installation
+Install [Package Control](https://packagecontrol.io/installation), and select `EViews` from `Package Control: Install Package` list in the Command Palette.
 
 ## Features of the package
 - Hitting `ctrl` + `B` from within a .prg file will open EViews and run the program provided EViews is installed at `C:\\Program Files\\EViews 12\\EViews12_x64.exe`
