@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+group aliasedVars *${1:_2}
+string remove${1:_2}=@replace(aliasedVars.@members,"${1:_2}","")
+for %var {remove${1:_2}}
+     series {%var}={%var}${1:_2}
+     delete {%var}${1:_2}
+next
+	]]></content>
+	<tabTrigger>realias</tabTrigger>
+	<description>Set endogenous actuals to alternative scenario's solution</description>
+	<scope>source.EViews</scope>
+</snippet>

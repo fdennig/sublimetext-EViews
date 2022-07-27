@@ -1,0 +1,283 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - prg
+scope: source.EViews
+
+variables:
+  legal_names: '\b[a-zA-Z_][\w\$]*\b'
+
+contexts:
+  prototype:
+    - include: comments
+
+  main:
+    - include: strings
+    - include: mnemonics
+    - include: series
+    - include: rlang
+    - include: equations
+    - include: identities
+    - include: programVars
+    - include: callfuncs
+    - include: brackets
+    - include: numeric
+    - include: curly-braces
+    - include: functions
+    - include: keywords
+    - include: varsetal
+    # - include: braces
+
+
+    # - match: '\b(subroutine|if|for|while)\b'
+    #   scope: keyword.control.EViews
+    #   push: blockBody
+    #   captures:
+    #     0: keyword.control.EViews
+
+  comments:
+    - match: ''''
+      scope: punctuation.definition.comment.EViews
+      push:
+        # This is an anonymous context push for brevity.
+        - meta_scope: comment.line.EViews
+        - match: (?=$\n?)
+          pop: true
+  keywords:
+    - match: '(?i)(\b(call|clearerrs|else|endif|exec|exitloop|for|if|include|logclear|logmode|logmsg|logsave|next|open|optimize|output|poff|pon|program|return|run|sleep|spawn|seterr|seterrcount|setmaxerrs|statusline|step|stop|then|tic|to|toc|wend|while|xclose|xget|xlog|xopen|xput|xrun)\b)'
+      scope: keyword.control.EViews
+    - match: '(?i)(\b(add|addarrow|addassign|addin|adduo|addrect|addellipse|addinit|addover|addtext|adjust|align|append|autoarma|axis|bpf|classify|clear|clearhist|cleartext|comment|control|copyrange|copytable|datelabel|ddloadtmpl|ddrowopts|ddsavetmpl|ddtabopts|define|delete|deletecol|deleterow|distdata|draw|drawdefault|drop|droplink|dtabopts|ets|exclude|extract|factnames|fetch|fill|fit|flatten|forcavg|forceval|forecast|getglobalc|graphmode|horizindent|hpf|innov|insert|insertcol|insertobs|insertrow|ipolate|label|leftmargin|legend|linkto|log|makecoint|makederivs|makeendog|makefilter|makegarch|makegrads|makegraph|makegroup|makelimits|makeloglike|makemap|makemodel|makepanpcomp|makepcomp|makeregs|makeresids|makergmprobs|makescores|makesignals|makestates|makestats|makesystem|maketransprobs|makewhiten|map|merge|move|name|olepush|options|override|reinclude|remove|replace|replacelink|replacevar|resample|revert|rotateclear|scenario|seas|set|setattr|setbpelem|setcollabels|setconvert|setelem|setfillcolor|setfont|setformat|setglobalc|setheight|setindent|setjust|setlines|setmerge|setobslabel|setprefix|setrowlabels|setsuffix|settextcolor|settrace|setupdate|setwidth|smooth|solve|solveopt|stochastic|tablemode|template|textdefault|title|topmargin|trace|track|tramoseats|unlink|update|updatecoefs|vertindent|vertspacing|width|write|x11|x12|x13|abtest|anticov|archtest|area|arlm|arma|arroots|auto|band|bar|bdstest|block|boundstest|boxplot|breakspec|breaktest|buroot|cause|cdtest|cellipse|checkderivs|chow|cinterval|coefcov|coefscale|coint|cointgraph|cointrep|compare|cor|correl|correlsq|cov|cross|cvardecomp|decomp|depfreq|derivs|describe|display|displayname|distplot|dot|dtable|edftest|eigen|endog|endogtest|eqs|errbar|facbreak|fitstats|fitted|fixedtest|freq|garch|grads|hettest|hilo|hist|icgraph|ictable|impulse|infbetas|infstats|instsum|jbera|laglen|line|loadings|lrcov|lrvar|lvageplot|maxcor|means|mixed|msa|msg|multibreak|observed|orthogtest|output|pancov|panpcomp|partcor|pcomp|pie|predict|qqplot|qrprocess|qrslope|qrsymm|qstats|ranhaus|rcomptest|reduced|representations|reset|residcor|residcov|resids|results|rgmprobs|rls|rotate|rotateout|scat|scatmat|scatpair|scores|seasplot|sheet|signalgraphs|smc|spec|spike|statby|statefinal|stategraphs|stateinit|stats|structure|testadd|testbtw|testby|testdrop|testexog|testfit|testlags|teststat|transprobs|ubreak|uroot|usage|varinf|vars|vratio|wald|weakinst|white|xyarea|xybar|xyline|xypair|ar|ccopy|cd|cfetch|clabel|close|colplace|copy|d|db|dbcopy|dbcreate|dbdelete|dbopen|dbpack|dbrebuild|dbrename|delete|dlog|do|driconvert|exit|expand|fetch|freeze|frml|genr|hconvert|hfetch|hlabel|import|importmat|importtbl|load|ma|matplace|mtos|na|nrnd|nrnd|optsave|optset|pageappend|pagecontract|pagecopy|pagecreate|pagedelete|pageload|pagerefresh|pagerename|pagesave|pageselect|pagestack|pagestruct|pageunlink|pageunstack|param|pdl|print|range|read|rename|rnd|rnd|rndint|rndseed|rowplace|sar|save|setcell|setcolwidth|setline|show|sma|sort|stom|stomna|store|tabplace|ttom|unlink|wfclose|wfcompare|wfcreate|wfdetails|wfopen|wfrefresh|wfsave|wfselect|wfstats|wfunlink|wfuse|workfile|write)\b)'
+      scope: keyword.other.EViews
+
+  # block-statements:
+    # - match: '\b(if|while)\b'
+    #   scope: keyword.control.conditional.EViews
+    #   push:
+    # - match: '\b(for)\b'
+    #   scope: keyword.control.EViews
+    #   push:
+
+  functions:
+    - match: '(?i)\b(subroutine)\s+(?={{legal_names}}\()'
+      scope: keyword.declaration.function.EViews keyword.control.EViews
+      push:
+        - meta_scope: meta.function.EViews
+        - match: '{{legal_names}}(?=\()'
+          scope: entity.name.function.EViews meta.generic-name.EViews
+          push:
+            - match: \(
+              scope: meta.function.parameters.EViews punctuation.section.parameters.begin.EViews
+              set: function-parameters
+        # - match: '({{legal_names}}(?!\())'
+        #   scope: entity.name.function.EViews meta.generic-name.EViews
+        #   set: function-after-parameters
+    - match: '(?i)\bsubroutine\s+(?={{legal_names}}\s*$\n?)'
+      scope: keyword.declaration.function.EViews keyword.control.EViews
+      push:
+        - meta_scope: meta.function.EViews
+        - match: '{{legal_names}}'
+          scope: entity.name.function.EViews meta.generic-name.EViews
+          set: function-after-parameters
+# this still has a problem because functions inside are considered function names
+  function-parameters:
+    - meta_content_scope: meta.function.parameters.EViews
+    - match: \)
+      scope: meta.function.parameters.EViews
+      set: function-after-parameters
+    - include: varsetal
+
+  function-after-parameters:
+    - meta_content_scope: meta.function.EViews
+    - include: main
+    - match: '(?i)\b(endsub)\b'
+      scope: keyword.declaration.function.EViews keyword.control.EViews
+      pop: 2
+
+  callfuncs:
+    - match: '(?i)\b(call)\b'
+      scope: keyword.control.EViews
+      push:
+        - meta_scope: meta.qualified-name.EViews meta.function-call.EViews
+        - meta_content_scope: variable.function.EViews
+        - match: '({{legal_names}})'
+          scope: variable.function.EViews meta.generic-name.EViews
+          pop: true
+
+  equations:
+    - match: '(?i)\b(equation)\b'
+      scope: storage.type.object.EViews
+      push:
+        - meta_content_scope: meta.equation.EViews
+        - match: '({{legal_names}}|({%{{legal_names}}}))+'
+          scope: entity.name.equation.EViews meta.generic-name.EViews
+          push:
+            - match: '\n'
+              pop: 2
+            - match: '(?='')'
+              embed: comments
+              escape: $\n?
+            - include: keywords
+            - include: varsetal
+            - include: curly-braces
+            - include: numeric
+
+  mnemonics:
+    - match: '(?i)\b(mnemon)\b'
+      scope: storage.type.object.EViews
+      push:
+        - meta_content_scope: meta.mnemonic.EViews
+        - match: '{{legal_names}}'
+          scope: entity.name.mnemonic.EViews meta.generic-name.EViews
+          push:
+            - match: '\n'
+              pop: 2
+
+  programVars:
+    - match: (?=(!|%){{legal_names}}\s*=)
+      push:
+        - meta_content_scope: meta.programvariable.Eviews
+        - match: (!|%){{legal_names}}(?=\s*=)
+          scope: entity.name.programvariable.EViews meta.generic-name.EViews
+          pop: 1
+
+  series:
+    - match: '(?i)\b(series)\b'
+      scope: storage.type.object.EViews
+      push:
+        - meta_content_scope: meta.series.EViews
+        - match: '({{legal_names}}|({%{{legal_names}}}))+'
+          scope: entity.name.series.EViews meta.generic-name.EViews
+          push:
+            - match: '\n'
+              pop: 2
+            - match: '(?='')'
+              embed: comments
+              escape: $\n?
+            - include: keywords
+            - include: varsetal
+            - include: curly-braces
+
+
+  identities:
+    - match: '\s(?i)(@identity)\s+(?={{legal_names}})'
+      scope: meta.function-call.EViews
+      push:
+        - meta_content_scope: meta.identity.EViews
+        - match: '(({{legal_names}})({%{{legal_names}}})*)+'
+          scope: entity.name.identity.EViews meta.generic-name.EViews
+          push:
+            - match: '\n'
+              pop: 2
+            - match: '(?='')'
+              embed: comments
+              escape: $\n?
+            - include: keywords
+            - include: varsetal
+            - include: curly-braces
+            - include: numeric
+    - match: '\s(?i)(@identity)\s+(?={%{{legal_names}}})'
+      scope: meta.function-call.EViews
+      push:
+        - meta_content_scope: meta.identity.EViews
+        - match: '(({%{{legal_names}}})({{legal_names}})*)+'
+          scope: entity.name.identity.EViews meta.generic-name.EViews
+          push:
+            - match: '\n'
+              pop: 2
+            - match: '(?='')'
+              embed: comments
+              escape: $\n?
+            - include: keywords
+            - include: varsetal
+            - include: curly-braces
+            - include: numeric
+  brackets:
+    - match: '(\b[a-zA-Z_][\w\$]*(?=\())'
+      scope: keyword.other.EViews
+      push:
+        - match: \(
+          scope: meta.function.parameters.EViews
+          set: parameters
+
+  parameters:
+    - meta_content_scope: meta.function.parameters.EViews
+    - match: \)
+      scope: meta.function.parameters.EViews
+      pop: true
+    - include: strings
+    - include: varsetal
+
+  numeric:
+    - match: '\b(-)?[0-9.]+(e)?(-)?[0-9]*\b'
+      captures:
+        0: constant.numeric.EViews
+  vars:
+    - match: '%{{legal_names}}'
+      scope: variable.other.string.EViews
+    - match: '!{{legal_names}}'
+      scope: variable.other.numeric.EViews
+  varsetal:
+    - include: vars
+    - match: '(?i)(\b(alpha|coef|equation|factor|frml|geomap|genr|graph|group|link|logl|matrix|model|pool|rowvector|sample|scalar|series|spool|sspace|string|svector|sym|system|table|text|userobj|valmap|var|vector)\b)'
+      captures:
+        0: storage.type.object.EViews
+    - match: '(@[a-zA-Z]+)'
+      captures:
+        0: meta.function-call.EViews
+    - match: '(?i)(\b(3sls|arch|ardl|binary|breakls|bvar|censored|cointreg|count|ec|fiml|glm|gls|gmm|heckit|ipf|liml|logit|ls|ml|ordered|pace|pf|probit|qreg|robustls|smpl|stepls|sur|svar|switchreg|threshold|tsls|uls|wls|wtsls)\b)'
+      captures:
+        0: keyword.other.EViews
+    - match: '(\+|-|\*|/|\^|<|>|=|,|\.)'
+      captures:
+        0: keyword.operator.EViews
+    - match: '(?i)(\b(not|and|or)\b)'
+      captures:
+        0: keyword.operator.word.EViews
+  strings:
+    - meta_include_prototype: false
+    - match: '"'
+      scope: punctuation.definition.string.begin.EViews meta.string string.quoted.double.EViews
+      push:
+        - meta_content_scope: string.EViews meta.string.EViews
+        - match: '"'
+          scope: punctuation.definition.string.end.EViews meta.string.EViews string.quoted.double.EViews
+          pop: true
+  curly-braces:
+    - match: '{(?=%)'
+      push:
+        - meta_scope: meta.braces variable.other.eval.EViews variable.other.string.EViews
+        - match: '}'
+          pop: true
+    - match: '{(?=!)'
+      push:
+        - meta_scope: meta.braces variable.other.eval.EViews variable.other.numeric.EViews
+        - match: '}'
+          pop: true
+        # - include: vars
+
+  rlang:
+    - match: 'xopen\(r\)'
+      scope: keyword.control.EViews
+      push:
+        - meta_scope: external.com.Eviews
+        - include: main
+        - match: 'xclose'
+          pop: true
+        - match: 'xon'
+          push: Packages/R/R.sublime-syntax
+          with_prototype:
+            - match: '(?=xoff)'
+              pop: true
+  # braces:
+  #   - match: '\('
+  #     scope: punctuation.EViews
+  #     push:
+  #       # - meta_content_scope: meta.parens.EViews
+  #       - match: '\)'
+  #         scope: punctuation.EViews
+  #         pop: true
+  #       - include: numeric
+  #       - include: varsetal
+  #       - include: curly-braces
+  #       - include: strings

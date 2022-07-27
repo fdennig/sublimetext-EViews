@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+smpl ${1:%solve_start} ${2:%fcst_end}
+{%cty}.scenario "baseline"
+{%cty}.addassign(i,c) @stochastic
+{%cty}.addinit(v=n) @stochastic
+{%cty}.solve(o=b,c=1e-12,v=t,g=n) 
+	]]></content>
+	<tabTrigger>rebaseline</tabTrigger>
+	<description>Re-solve baseline on changed model</description>
+	<scope>source.EViews</scope>
+</snippet>

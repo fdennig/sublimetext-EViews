@@ -1,0 +1,49 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+	},
+	"rules":
+	[
+		{
+			"name": "Control Keywords",
+			"scope": "keyword.control",
+			"font_style": "bold"
+		},
+
+		{
+			"name": "Object declaration",
+			"scope": "storage.type.object.EViews",
+			"font_style": "underline"
+		},
+
+		{
+			"name": "In built function calls",
+			"scope": "meta.function-call.EViews",
+			"foreground": "hsl(300, 30%, 68%)" // set to color of "keyword" scope
+		},
+
+		{
+			"name": "strings in memory",
+			"scope": "variable.other.string.EViews",
+			// "font_style": "italic",
+			"foreground": "hsl(114, 31%, 68%)" //set to color of "string" scope
+		},
+
+		{
+			"name": "numbers in memory",
+			"scope": "variable.other.numeric.EViews",
+			// "font_style": "bold",
+			"foreground": "hsl(32, 93%, 66%)" // set to color of "constant.numeric" scope
+		}, 
+
+		{
+		    "name": "Entity name",
+		    "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+		    "foreground": "hsl(180, 36%, 54%)" // set to color or "entity.name.function" scope
+		},
+	]
+}

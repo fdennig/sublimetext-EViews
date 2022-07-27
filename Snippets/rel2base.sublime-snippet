@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+rel_${1:\{%cty\}NYGDPMKTPKN} = (${1:\{%cty\}NYGDPMKTPKN}_${2:!i}/${1:\{%cty\}NYGDPMKTPKN}_0 - 1)*100
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.EViews</scope>
+</snippet>

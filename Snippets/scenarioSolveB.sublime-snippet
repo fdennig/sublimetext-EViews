@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[ 
+!i = ${1:8}
+model.scenario(n,a=!i) ${2:name}
+model.override {%overrides}
+model.exclude {%excludes}
+model.scenario(c) "baseline" 
+smpl ${3:%solve_start} ${4:%solve_end}
+model.solve(o=b,c=1e-12,v=t,g=n)
+	]]></content>
+	<tabTrigger>scenariob</tabTrigger>
+	<description>Solve scenario initiated to baseline (alternative)</description>
+	<scope>source.EViews</scope>
+</snippet>
+

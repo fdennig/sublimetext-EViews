@@ -1,0 +1,17 @@
+[
+
+      {
+          "caption": "Add to selection",
+          "command": "prompt_add_string_to_selection",
+          "args"   : {
+                     }
+      },
+
+      {
+          "caption": "Add MFMOD-notes",
+          "command": "add_tutorial_to_project",
+          "args"   : {
+                     }
+      }
+      
+]

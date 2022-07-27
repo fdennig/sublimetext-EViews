@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[ 
+{%cty}.scenario(n,a=!i,i="baseline",c) ${1:name}
+{%cty}.scenario ${1:name}
+{%cty}.exclude  {%excludelist}
+{%cty}.OVERRIDE {%overridelist}
+smpl ${2:%solve_start} ${3:%fcst_end}
+{%cty}.addassign(i,c) @stochastic
+{%cty}.addinit(v=n) @stochastic
+{%cty}.solve(s=d,d=d,o=b,i=a,c=1e-10,v=t,g=n)
+	]]></content>
+	<tabTrigger>scenario</tabTrigger>
+	<description>Solve scenario initiated to baseline</description>
+	<scope>source.EViews</scope>
+</snippet>
+
+

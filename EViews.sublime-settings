@@ -1,0 +1,10 @@
+// These settings override both User and Default settings for the EViews syntax
+{
+	"color_scheme": "Mariana.sublime-color-scheme", 
+	"word_wrap": true,
+	// "wrap_width": 0,
+	"rulers":
+	[
+		80
+	],
+}

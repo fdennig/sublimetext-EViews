@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+' Generate add factors and model solutions in historical period
+${3:\{%cty\}}.addassign(i,c) @stochastic
+${3:\{%cty\}}.addinit(v=n) @stochastic 
+${3:\{%cty\}}.scenario "baseline"
+smpl ${1:%solve_start} ${2:%hist_end}
+${3:\{%cty\}}.solve(o=b,c=1e-12,v=t,g=n)  
+
+	]]></content>
+	<tabTrigger>hist</tabTrigger>
+	<description>Solve in history</description>
+	<scope>source.EViews</scope>
+</snippet>

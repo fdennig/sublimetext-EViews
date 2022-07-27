@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+%oldnames = "${1:{cty}NYGDPMKTPKN}"
+%newnames = "${2:GDPreal}"
+%renameString = @winterleave(%oldnames, %newnames)
+rename {%renameString}
+	]]></content>
+	<tabTrigger>rename</tabTrigger>
+	<description>Rename list of variables</description>
+	<scope>source.EViews</scope>
+</snippet>

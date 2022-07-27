@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+' Check that identities hold by testing that their add factors are zero
+' set !check_id to correct variable name
+if ${2:!check_id} = 1 then
+	' creates the AFs for the identities and collects them in ident_a
+	${1:\{%cty\}}.addassign(i,c) @identity
+	${1:\{%cty\}}.addinit(v=n) @identity
+	string ident = ${1:\{%cty\}}.@identity	
+	string ident_a = @wcross(ident,"_a")
+	
+	' finds the largest value of any AF, and displays it along with all AFs
+	scalar maxabs = 0
+	for %var {ident_a}
+		!buff = @max(abs({%var}))
+		if !buff>maxabs then
+			maxabs = !buff
+		endif
+	next
+	smpl %solve_start @last
+	freeze(_tident,mode=overwrite) {ident_a}
+	_tident.setformat(@all) f.4
+	show _tident 
+	show maxabs
+
+	stop
+endif
+	]]></content>
+	<tabTrigger>idents</tabTrigger>
+	<description>Check identities</description>
+	<scope>source.EViews</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[ 
+' add new equation to model
+equation _${1:var}.ls ${1:var} = ${3:equation spec}
+${2:{%cty}}.merge _${1:var}
+	]]></content>
+	<tabTrigger>eq</tabTrigger>
+	<description>Add new equation to model</description>
+	<scope>source.EViews</scope>
+</snippet>
+

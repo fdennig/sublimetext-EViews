@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+' extends AFs so that they decay at rate !delta
+' and sets AFs of quasi-dentities to zero (needs c_spec_qi defined first)
+!delta = ${1:0.5}
+smpl ${2:%hist_end}+1 ${3:@last}
+group add *_a
+string g_add=add.@members
+for %var {g_add}
+     series {%var}={%var}(-1)*(1-!delta)
+next
+
+' sets AFs for quasi-identities to zero. presumes c_spec_qi has been defined
+smpl %hist_end+1 @last
+for %var {c_spec_qi}
+	series model{%var}_A=0
+next
+	]]></content>
+	<tabTrigger>extendaf</tabTrigger>
+	<description>Extend Add Factors into Projection period</description>
+	<scope>source.EViews</scope>
+</snippet>
