@@ -9,10 +9,11 @@ variables:
   legal_names: '\b[a-zA-Z_][\w\$]*\b'
 
 contexts:
-  prototype:
-    - include: comments
+  # prototype:
+  #   - include: comments
 
   main:
+    - include: comments
     - include: strings
     - include: mnemonics
     - include: series
@@ -59,6 +60,7 @@ contexts:
     #   push:
 
   functions:
+    - include: comments
     - match: '(?i)\b(subroutine)\s+(?={{legal_names}}\()'
       scope: keyword.declaration.function.EViews keyword.control.EViews
       push:
@@ -86,6 +88,7 @@ contexts:
       scope: meta.function.parameters.EViews
       set: function-after-parameters
     - include: varsetal
+    - include: comments
 
   function-after-parameters:
     - meta_content_scope: meta.function.EViews
@@ -199,6 +202,7 @@ contexts:
         - match: \(
           scope: meta.function.parameters.EViews
           set: parameters
+        - include: comments
 
   parameters:
     - meta_content_scope: meta.function.parameters.EViews
@@ -207,6 +211,7 @@ contexts:
       pop: true
     - include: strings
     - include: varsetal
+    - include: comments
 
   numeric:
     - match: '\b(-)?[0-9.]+(e)?(-)?[0-9]*\b'
@@ -235,7 +240,6 @@ contexts:
       captures:
         0: keyword.operator.word.EViews
   strings:
-    - meta_include_prototype: false
     - match: '"'
       scope: punctuation.definition.string.begin.EViews meta.string string.quoted.double.EViews
       push:
@@ -243,17 +247,20 @@ contexts:
         - match: '"'
           scope: punctuation.definition.string.end.EViews meta.string.EViews string.quoted.double.EViews
           pop: true
+
   curly-braces:
     - match: '{(?=%)'
       push:
         - meta_scope: meta.braces variable.other.eval.EViews variable.other.string.EViews
         - match: '}'
           pop: true
+        - include: comments
     - match: '{(?=!)'
       push:
         - meta_scope: meta.braces variable.other.eval.EViews variable.other.numeric.EViews
         - match: '}'
           pop: true
+        - include: comments
         # - include: vars
 
   rlang:
