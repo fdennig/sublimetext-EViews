@@ -1,5 +1,3 @@
 [
-	// { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
-
-	// { "keys": ["ctrl+k", "ctrl+k"], "command": "fold_by_level", "args": {"level": 1}}
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 ]

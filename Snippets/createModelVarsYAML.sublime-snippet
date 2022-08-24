@@ -1,0 +1,71 @@
+<snippet>
+	<content><![CDATA[
+'############################################################
+'create table with variable database (type and dependencies) and save to .yml file
+'the result is a database comprising all variables in the current model, with entries for type (stochatic, quasi-identity, identity, exogenous), as well as the dependencies (by and on) other variables
+'############################################################
+
+string stochlist = {%cty}.@stochastic
+string identlist = {%cty}.@identity
+string cty_c_spec_qi = @wreplace(c_spec_qi, "*", %cty+"*")
+
+string variablesRaw = {%cty}.@varlist
+string variablesClean = @wdrop(variablesRaw, "*_A")
+
+!tableLength = @wcount(variablesClean)*4
+table(!tableLength,1) vartab
+
+!i = 1
+for %var {variablesClean}
+	%deps = {%cty}.@depends(%var)
+	%ups = {%cty}.@upends(%var)
+	if @wfind(stochlist, %var) then
+		%cleanDeps = @wdrop(%deps, "*_A")
+		if @wfind(cty_c_spec_qi, %var) then
+			vartab(!i,1) = %var + ":"
+			!i = !i+1
+			vartab(!i,1) = "  type: quasi-identity"
+			!i = !i+1
+			vartab(!i,1) = "  dependencies: "  + %cleanDeps
+			!i = !i+1
+			vartab(!i,1) = "  varsDependingOn: "  + %ups
+		else
+			vartab(!i,1) = %var + ":"
+			!i = !i+1
+			vartab(!i,1) = "  type: stochastic" 
+			!i = !i+1
+			vartab(!i,1) = "  dependencies: " + %cleanDeps
+			!i = !i+1
+			vartab(!i,1) = "  varsDependingOn: "  + %ups
+		endif
+	else
+		if @wfind(identlist, %var) then
+			vartab(!i,1) = %var +":"
+			!i=!i+1
+			vartab(!i,1) = "  type: identity"
+			!i=!i+1
+			vartab(!i,1) = "  dependencies: " +  %deps
+			!i = !i+1
+			vartab(!i,1) = "  varsDependingOn: "  + %ups
+		else
+			vartab(!i,1) = %var + ":"
+			!i=!i+1
+			vartab(!i,1) = "  type: exogenous"
+			!i=!i+1
+			vartab(!i,1) = "  dependencies: null"
+			!i = !i+1
+			vartab(!i,1) = "  varsDependingOn: "  + %ups
+		endif
+	endif
+	!i = !i + 1
+next
+
+%varListFolder = "variables"
+shell IF exist %varListFolder (echo directory exists) ELSE ( mkdir %varListFolder )
+
+vartab.save(t=txt) variables\\${1:\{%cty\}MODvars}.yml
+	]]></content>
+	<tabTrigger>modelvars</tabTrigger>
+	<description>MFMOD: create dictionary with all model variables</description>
+	<scope>source.EViews</scope>
+</snippet>
