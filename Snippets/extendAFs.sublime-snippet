@@ -17,6 +17,6 @@ for %var {c_spec_qi}
 next
 	]]></content>
 	<tabTrigger>extendaf</tabTrigger>
-	<description>Extend Add Factors into Projection period</description>
+	<description>MFMOD: extend add factors into projection period</description>
 	<scope>source.EViews</scope>
 </snippet>

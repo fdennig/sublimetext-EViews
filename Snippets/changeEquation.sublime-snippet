@@ -5,7 +5,7 @@ equation _${1:var}.ls ${1:var} = ${3:equation spec}
 ${2:{%cty}}.update ' this line only needs to be called once after several replacements
 	]]></content>
 	<tabTrigger>changeeq</tabTrigger>
-	<description>Change existing equation in model</description>
+	<description>EViews: change existing equation in model</description>
 	<scope>source.EViews</scope>
 </snippet>
 

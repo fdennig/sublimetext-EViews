@@ -4,6 +4,7 @@ rel_${1:\{%cty\}NYGDPMKTPKN} = (${1:\{%cty\}NYGDPMKTPKN}_${2:!i}/${1:\{%cty\}NYG
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>rel</tabTrigger>
+	<description>MFMOD: create rel2baseline series for a variable</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.EViews</scope>
 </snippet>

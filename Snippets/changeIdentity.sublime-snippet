@@ -4,7 +4,7 @@
 ${2:{%cty}}.replace @identity ${1:var} = ${3:identity spec}
 	]]></content>
 	<tabTrigger>changeid</tabTrigger>
-	<description>Change existing identity</description>
+	<description>EViews: change existing identity</description>
 	<scope>source.EViews</scope>
 </snippet>
 

@@ -4,7 +4,7 @@
 ${2:{%cty}}.append @identity ${1:var} = ${3:equation spec}
 	]]></content>
 	<tabTrigger>id</tabTrigger>
-	<description>Add new identity to model</description>
+	<description>EViews: add new identity to model</description>
 	<scope>source.EViews</scope>
 </snippet>
 

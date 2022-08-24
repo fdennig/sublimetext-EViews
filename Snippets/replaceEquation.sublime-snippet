@@ -5,7 +5,7 @@ ${2:{%cty}}.drop ${1:var}
 ${2:{%cty}}.append @identity ${1:var} = ${3:identity spec}
 	]]></content>
 	<tabTrigger>replaceeq</tabTrigger>
-	<description>Replace equation with identity</description>
+	<description>EViews: replace equation with identity</description>
 	<scope>source.EViews</scope>
 </snippet>
 

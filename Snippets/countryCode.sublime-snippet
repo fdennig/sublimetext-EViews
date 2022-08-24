@@ -6,5 +6,5 @@
 	<tabTrigger>ct</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.EViews</scope>
-	<description>Country variable MFMOD</description>
+	<description>MFMOD: insert {%cty}</description>
 </snippet>

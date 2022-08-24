@@ -9,7 +9,7 @@ smpl ${3:%solve_start} ${4:%solve_end}
 model.solve(o=b,c=1e-12,v=t,g=n)
 	]]></content>
 	<tabTrigger>scenariob</tabTrigger>
-	<description>Solve scenario initiated to baseline (alternative)</description>
+	<description>EViews: solve scenario initiated to baseline (alternative)</description>
 	<scope>source.EViews</scope>
 </snippet>
 

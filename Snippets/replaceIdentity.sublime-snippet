@@ -6,7 +6,7 @@ equation _${1:var}.ls ${1:var} = ${3:equation spec}
 ${2:{%cty}}.merge  _${1:var}
 	]]></content>
 	<tabTrigger>replaceid</tabTrigger>
-	<description>Replace identity with equation </description>
+	<description>EViews: replace identity with equation </description>
 	<scope>source.EViews</scope>
 </snippet>
 

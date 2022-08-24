@@ -14,6 +14,6 @@ smpl ${1:%solve_start} ${2:%fcst_end}
 {%cty}.solve(s={%solution_type},d={%dynamics},o={%solver},i={%initials},c={%tolerance},v={%verbose},g={%signfDigits})   
 	]]></content>
 	<tabTrigger>baseline</tabTrigger>
-	<description>Solve baseline</description>
+	<description>EViews: solve baseline</description>
 	<scope>source.EViews</scope>
 </snippet>

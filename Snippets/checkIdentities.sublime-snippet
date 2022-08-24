@@ -27,6 +27,6 @@ if ${2:!check_id} = 1 then
 endif
 	]]></content>
 	<tabTrigger>idents</tabTrigger>
-	<description>Check identities</description>
+	<description>EViews: check identities</description>
 	<scope>source.EViews</scope>
 </snippet>

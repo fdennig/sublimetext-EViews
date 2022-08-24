@@ -9,6 +9,6 @@ ${3:\{%cty\}}.solve(o=b,c=1e-12,v=t,g=n)
 
 	]]></content>
 	<tabTrigger>hist</tabTrigger>
-	<description>Solve in history</description>
+	<description>EViews: solve in history</description>
 	<scope>source.EViews</scope>
 </snippet>

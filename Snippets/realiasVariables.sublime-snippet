@@ -8,6 +8,6 @@ for %var {remove${1:_2}}
 next
 	]]></content>
 	<tabTrigger>realias</tabTrigger>
-	<description>Set endogenous actuals to alternative scenario's solution</description>
+	<description>EViews: set endogenous actuals to alternative scenario's solution</description>
 	<scope>source.EViews</scope>
 </snippet>
