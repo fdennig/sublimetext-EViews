@@ -1,0 +1,1911 @@
+BFBOPTOTLCD:
+  description: Overall Balance of Payment
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFCAPTCD:
+  description: Capital Account Balance
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFFFDICD:
+  description: Net Foreign Direct Investment
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFFINTCD:
+  description: Financial Account Balance
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFFINXCD:
+  description: Financial Account Balance excl. Reserves
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFFPFTCD:
+  description: Net Portfolio Investment
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFNEOMCD:
+  description: Net Errors and Omissions
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFOOTHCD:
+  description: Net Other Investment less Net Government Ext. Borrowing
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFOTHRCD:
+  description: Net Other Investment
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFRACGCD:
+  description: Change in Reserve Assets
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFCAFTOTLCD:
+  description: Capital and Financial Account Balance
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINAGOVCD:
+  description: External Government Amortization
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINAOTHCD:
+  description: Non-Government Amortization
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINCABDCD:
+  description: Current Account Deficit
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINDGOVCD:
+  description: External Government Disbursement
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINDOTHCD:
+  description: Non-Government Disbursement
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINFGAPCD:
+  description: External Financing Gap
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINIMFCCD:
+  description: IMF Credit, Net
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTACD:
+  description: Medium and Long-term Debt Amortization Excl. IMF
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTAGCD:
+  description: Medium and Long-term Debt Amortization, Government
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTAPCD:
+  description: Medium and Long-term Debt Amortization, Private
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTDCD:
+  description: Medium and Long-term Debt Disbursement excl. IMF
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTDGCD:
+  description: Medium and Long-term Debt Disbursement, Government
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINMLTDPCD:
+  description: Medium and Long-term Debt Disbursement, Private
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINNEOMCD:
+  description: Net Errors and Omissions, Gross External Borrowing
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINNETDCD:
+  description: Net Foreign Financing
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINOTHRCD:
+  description: Net All Other BOP Financing Flows
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINOTSRCD:
+  description: Other Short-term Capital Outflows
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINREQMCD:
+  description: BOP Financing Requirement
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINSRCSCD:
+  description: BOP Financing Source of Fund
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINSRTACD:
+  description: Short-term Debt Amortization
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINSRTDCD:
+  description: Short-term Debt Disbursement
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINTGOVCD:
+  description: Net External Financing, Government
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINTOTACD:
+  description: Short and Medium-term Debt Amortization
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BFFINTOTDCD:
+  description: Short and Medium-term Debt Disbursement
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMFSTCABTCD:
+  description: Imports, Factor Services and Transfers, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMFSTINTECD:
+  description: Imports, External Debt Interest Payment
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMFSTOTHRCD:
+  description: Imports, Other Factor Services and Transfers, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMFSTREMTCD:
+  description: Imports, Remittances, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMGSRGNFSCD:
+  description: Imp., GNFS (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMGSRMRCHCD:
+  description: Imp., MRCH (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BMGSRNFSVCD:
+  description: Imp., NF SERV (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNCABFUNDCD:
+  description: Current Account Balance, US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNCABFUNDCD_:
+  description: Current Account Balance (% of GDP)
+  model:
+  - MFMOD
+  unit: proportion of GDP
+BNCABFUNDCN:
+  description: Current Account Balance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+BNFSTCABTCD:
+  description: Net Exports, Factor Services and Transfers, GNFS, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNFSTOTHRCD:
+  description: Net Exports, Other Factor Services and Transfers, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNFSTREMTCD:
+  description: Net Exports, Remittances, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNGSRGNFSCD:
+  description: Net Exp., GNFS (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNGSRMRCHCD:
+  description: Net Exp., MRCH (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BNGSRNFSVCD:
+  description: Net Exp., NF SERV (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXFSTCABTCD:
+  description: Exports, Factor Services and Transfers, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXFSTOTHRCD:
+  description: Exports, Other Factor Services and Transfers, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXFSTREMTCD:
+  description: Exports, Remittances, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXGOILMRCHCD:
+  description: Exports, Oil Exports, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXGSRGNFSCD:
+  description: Exp., GNFS (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXGSRMRCHCD:
+  description: Exp., MRCH (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXGSRNFSVCD:
+  description: Exp., NF SERV (BOP), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+BXNOILMRCHCD:
+  description: Exports, Non-Oil Exports, BOP
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+DEPR:
+  description: Depreciation Rate
+  model:
+  - MFMOD
+  unit: percent/year
+ENAGRGHGEKT:
+  description: Agriculture-related GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons/year
+ENAGRGHGEKT_:
+  description: Agriculture-related GHG emissions (% of Total GHG emissions)
+  model:
+  - MFMOD
+  unit: proportion of Total GHG emissions
+ENAGRGHGEKT_INT:
+  description: Agriculture-related GHG emissions, Agriculture VA intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+ENATMCO2EKT:
+  description: CO2 emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENATMCO2EKT_INT:
+  description: CO2 emissions, GDP intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+ENCO2TESINTENSITY:
+  description: CO2 intensity of energy, toe
+  model:
+  - MFMOD
+  unit: ktons/toe
+ENENRGHGEKT:
+  description: Energy related GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENENRGHGEKT_:
+  description: Energy related GHG emissions (% of Total GHG emissions)
+  model:
+  - MFMOD
+  unit: proportion of Total GHG emissions
+ENENRGHGEKT_INT:
+  description: Energy related GHG emissions, kt, GDP intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+ENFUGGHGEKT:
+  description: Fugitive GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENFUGGHGEKT_:
+  description: Fugitive GHG emissions (% of Total GHG emissions)
+  model:
+  - MFMOD
+  unit: proportions of Total GHG emissions
+ENFUGGHGEKT_INT:
+  description: Fugitive GHG emissions, oil production/energy intensity
+  model:
+  - MFMOD
+  unit: ktons/toe
+ENGHGTESINTENSITY:
+  description: GHG intensity of energy, toe
+  model:
+  - MFMOD
+  unit: ktons/toe
+ENINDGHGEKT:
+  description: Industry-related GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENINDGHGEKT_:
+  description: Industry-related GHG emissions (% of Total GHG emissions)
+  model:
+  - MFMOD
+  unit: proportion of Total GHG emissions
+ENINDGHGEKT_INT:
+  description: Industry-related GHG emissions, Industry VA intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+ENLCFGHGEKT:
+  description: Land-use change and forestry related GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENLCFGHGEKT_:
+  description: Land-use change and forestry related GHG emissions (% of Total GHG
+    emissions)
+  model:
+  - MFMOD
+  unit: proportion of Total GHG emissions
+ENTESGDPINTENSITY:
+  description: Energy intensity of GDP
+  model:
+  - MFMOD
+  unit: toe/1e6 LCU
+ENTOTGHGEKT:
+  description: Total GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENTOTGHGEKT_INT:
+  description: Total GHG emissions, GDP intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+ENWSTGHGEKT:
+  description: Waste-related GHG emissions, kt
+  model:
+  - MFMOD
+  unit: ktons
+ENWSTGHGEKT_:
+  description: Waste-related GHG emissions (% of Total GHG emissions)
+  model:
+  - MFMOD
+  unit: proportion of Total GHG emissions
+ENWSTGHGEKT_INT:
+  description: Waste-related GHG emissions, GDP intensity
+  model:
+  - MFMOD
+  unit: ktons/1e6 LCU
+EXR05:
+  description: Exchange Rate, LCU per USD, Harmonized
+  model:
+  - MFMOD
+  unit: LCU/USD
+EXTLSHARE_:
+  description: Share of Externally Issued New Debt
+  model:
+  - MFMOD
+  unit: null
+FIRESTOTLCD:
+  description: Reserve Assets
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+FMLBLCRNGCN:
+  description: Credit to Non-Government
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+FMLBLMTWOCN:
+  description: Nominal Base Money
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+FMLBLMTWOKN:
+  description: Real Base Money
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+FMLBLPOLYFR:
+  description: Key Policy Interest Rate
+  model:
+  - MFMOD
+  unit: percent/year
+FPCPITOTLXN:
+  description: Consumer Price Index, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+GDPFCSTCAPCD:
+  description: GDP at Factor Cost per Capita
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GDPPCKD:
+  description: GDP per capita, 2000 US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+GDPPCKN:
+  description: GDP per capita, 2005 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+GGBALCYCLCN:
+  description: Cyclical Overall Fiscal Balance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALEXGRCN:
+  description: Overall Fiscal Balance excl. Grants
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALOTHRCN:
+  description: Additional Budget Financing Requirements incl. Arrears and Cash Adjustments
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALOVGGCN:
+  description: Overall Fiscal Balance excluding SOE
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALOVRLCD:
+  description: Govt. Deficit, US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGBALOVRLCD_:
+  description: Overall Balance (% of GDP, USD)
+  model:
+  - MFMOD
+  unit: proportion of GDP
+GGBALOVRLCN:
+  description: Overall Fiscal Balance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALPREXCN:
+  description: Primary Fiscal Balance excl. Grants
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALPRIMCD:
+  description: Primary Fiscal Balance
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGBALPRIMCN:
+  description: Primary Fiscal Balance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALSOEACN:
+  description: State-Owned Enterprise Adjustment Term
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGBALSTRLCN:
+  description: Structural Fiscal Balance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTDOMTCN:
+  description: General Government Gross Domestic Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTEXTLCD:
+  description: General Government Gross External Debt
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGDBTEXTLCN:
+  description: General Government Gross External Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTGRNTCN:
+  description: Public guarantees
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTTOTLCD:
+  description: General Government Gross Debt
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGDBTTOTLCN:
+  description: General Government Gross Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTVALDCN:
+  description: Government Debt Revaluation, Domestic
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTVALECN:
+  description: Government Debt Revaluation, External
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGDBTVALTCN:
+  description: Government Debt Revaluation
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPCAPTCN:
+  description: General Government Capital Expenditure
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPCRNTCN:
+  description: Current Expenditures
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPCROTCN:
+  description: other current expenditures
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPCYCLCN:
+  description: Cyclical Component of General Government Expenditures
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPGNFSCN:
+  description: General Government Expenditure on Goods and Services
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPINTDCN:
+  description: General Government Interest Payments on Domestic Public Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPINTECD:
+  description: General Government Interest Payments on External Public Debt
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGEXPINTECN:
+  description: General Government Interest Payments on External Public Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPINTPCN:
+  description: General Government Interest Payments on Public Debt
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPKINVCN:
+  description: General Government Capital Investments
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPKTRNCN:
+  description: General Government Capital Transfers
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPOTHRCN:
+  description: General Government Other Expenditures incl. Transfers
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPSTRLCN:
+  description: Structurally Adjusted General Government Expenditures
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTOTHCN:
+  description: All Other Current Transfers
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTOTLCD:
+  description: General Government Total Expenditure
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGEXPTOTLCN:
+  description: General Government Total Expenditure
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTOTSCN:
+  description: Other Social Transfers
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTPNSCN:
+  description: Pensions
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTRNSCN:
+  description: Current Transfers
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPTSOCCN:
+  description: Social Assistance
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGEXPWAGECN:
+  description: General Government Wages and Compensation Expenditure
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINCSOBCN:
+  description: Changes in cash and other balances
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINDOMTCN:
+  description: Net Domestic Financing
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINDOMTXN:
+  description: Share of Financing Requirement From Domestic Sources, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+GGFINDOTHCN:
+  description: Other Domestic Financing
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINDPRVCN:
+  description: Domestic Financing from Privatization
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINEAMTCN:
+  description: Amortization, External
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINEAMTXN:
+  description: Amortization, External, Rate, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+GGFINEDSBCN:
+  description: Disbursement, External
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINEOTHCN:
+  description: Other Financing, External
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINEXTLCN:
+  description: Net External Financing
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINFGAPCN:
+  description: Government Financing Gap
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINREQMCN:
+  description: Government Financing Requirement
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGFINTOTLCN:
+  description: Total Financing, External and Domestic
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVCOMMCN:
+  description: Commodity Related Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVCUSTSACUCN:
+  description: Revenue Collected by SARB on behalf of country, customs
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVCYCLCN:
+  description: Cyclical Component of General Government Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVDRCTCN:
+  description: General Government Direct Tax Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVDRCTER:
+  description: Direct Tax Revenues, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: effective tax rate
+GGREVEXCSACUCN:
+  description: Revenue Collected by SARB on behalf of country, excise
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVGNFSCN:
+  description: Taxes on Goods and Services
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVGNFSER:
+  description: Taxes on Goods and Services, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: Effective Tax Rate
+GGREVGRNTCN:
+  description: Grants
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVIDRTCN:
+  description: General Government Indirect Tax Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVINTPCN:
+  description: Interest and Dividends Revenue
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVNONTCN:
+  description: Non-Tax Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVNTEXCN:
+  description: Extended Non-Tax Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVOTHRCN:
+  description: General Government Other Revenues incl. Privatization
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUADJCN:
+  description: SACU revenue adjustment
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUADJRCN:
+  description: SACU Adjustment
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUCN:
+  description: Total SACU Revenue
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUCUSTCN:
+  description: Revenue Sharing To Each SACU Member, Customs
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUCUSTRCN:
+  description: SACU Customs
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUEXCCN:
+  description: Revenue Sharing To Each SACU Member, Excise
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACUEXCRCN:
+  description: SACU Excise
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSACURCN:
+  description: Total SACU Revenue
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSCPOCN:
+  description: SACU payments, ZAF to other SACU countries, derived
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSCTOCN:
+  description: Total SACU revenues, aggregated
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSOUTCN:
+  description: SACU payments, ZAF to other SACU countries, exog
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSSOCCN:
+  description: Social Security Contributions
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSSOCER:
+  description: Social Security Contributions, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: Effective Tax Rate
+GGREVSTRLCN:
+  description: Structurally Adjusted General Government Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSUCUDVPTCN:
+  description: REVENUE SHARING TO EACH SACU MEMBER
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVSUCUDVPTRCN:
+  description: SACU Development
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVTAXTCN:
+  description: Total Tax Revenue
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVTAXTER:
+  description: Total Tax Revenue, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: Effective Tax Rate
+GGREVTOTHCN:
+  description: Other Taxes
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVTOTLCD:
+  description: General Government Total Revenues
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+GGREVTOTLCN:
+  description: General Government Total Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVTOTLER:
+  description: General Government Total Revenues, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: Effective Tax Rate
+GGREVTRDECN:
+  description: Trade Tax Revenues
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+GGREVTRDEER:
+  description: Trade Tax Revenues, Effective Tax Rate
+  model:
+  - MFMOD
+  unit: Effective Tax Rate
+INFLEXPT:
+  description: Inflation Expectations
+  model:
+  - MFMOD
+  unit: percent/year
+INTR:
+  description: Implicit Interest Rate On Government Debt (legacy)
+  model:
+  - MFMOD
+  unit: percent/year
+INTRDDIFF:
+  description: Domestic Interest Rate Spread Over Policy Rate
+  model:
+  - MFMOD
+  unit: percent/year
+INTRDFR:
+  description: Implicit Interest Rate On Government Domestic Debt
+  model:
+  - MFMOD
+  unit: percent/year
+INTRDIFF:
+  description: Interest Rate Spread Over Policy Rate
+  model:
+  - MFMOD
+  unit: percent/year
+INTREDIFF:
+  description: External Interest Rate Spread Over Policy Rate
+  model:
+  - MFMOD
+  unit: percent/year
+INTREFR:
+  description: Implicit Interest Rate On Government External Debt
+  model:
+  - MFMOD
+  unit: percent/year
+INTRFR:
+  description: Implicit Interest Rate On Government Debt
+  model:
+  - MFMOD
+  unit: percent/year
+IPOLICY:
+  description: Policy Interest Rate
+  model:
+  - MFMOD
+  unit: percent/year
+LMEMPSTRL:
+  description: Structural Employment
+  model:
+  - MFMOD
+  unit: null
+LMEMPTOTL:
+  description: Employment
+  model:
+  - MFMOD
+  unit: null
+LMLBFTOTL:
+  description: Labor Force, 15+
+  model:
+  - MFMOD
+  unit: null
+LMPRTSTRL_:
+  description: Structural Participation Rate
+  model:
+  - MFMOD
+  unit: null
+LMPRTTOTL_:
+  description: Participation Rate
+  model:
+  - MFMOD
+  unit: null
+LMUNRSTRL_:
+  description: Structural Unemployment Rate
+  model:
+  - MFMOD
+  unit: null
+LMUNRTOTL_:
+  description: Unemployment Rate
+  model:
+  - MFMOD
+  unit: null
+MPK:
+  description: Marginal Product of Capital
+  model:
+  - MFMOD
+  unit: percent/year
+NECONGOVTCD:
+  description: Govt. Cons., US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NECONGOVTCN:
+  description: Govt. Cons., LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NECONGOVTCOV_:
+  description: Government Consumption Coverage Ratio
+  model:
+  - MFMOD
+  unit: null
+NECONGOVTKD:
+  description: Govt. Cons., 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NECONGOVTKN:
+  description: Govt. Cons., 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NECONGOVTXD:
+  description: Implicit USD defl., Govt. Cons., 2000 = 1
+  model:
+  - MFMOD
+  unit: USD Deflator
+NECONGOVTXN:
+  description: Implicit LCU defl., Govt. Cons., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NECONPRVTCD:
+  description: Pvt. Cons., US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NECONPRVTCN:
+  description: Pvt. Cons., LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NECONPRVTKD:
+  description: Pvt. Cons., 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NECONPRVTKN:
+  description: Pvt. Cons., 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NECONPRVTXD:
+  description: Implicit USD defl., Pvt. Cons., 2000 = 1
+  model:
+  - MFMOD
+  unit: USD Deflator
+NECONPRVTXN:
+  description: Implicit LCU defl., Pvt. Cons., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEER:
+  description: Nominal Effective Exchange Rate (NEER)
+  model:
+  - MFMOD
+  unit: null
+NEEXPGNFSCD:
+  description: Exp., GNFS (NIA), US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NEEXPGNFSCN:
+  description: Exp., GNFS (NIA), millions LCU
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEEXPGNFSKD:
+  description: Exp., GNFS (NIA), 2000 US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEEXPGNFSKN:
+  description: Exp., GNFS (NIA), 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEEXPGNFSXD:
+  description: Exp., GNFS (NIA), US$ Deflator (2010=1)
+  model:
+  - MFMOD
+  unit: USD Deflator
+NEEXPGNFSXN:
+  description: Exp., GNFS (NIA), LCU Price defl. 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEEXPGOILCN:
+  description: Exports, Oil, NIA
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEEXPGOILKN:
+  description: Exports, Oil, NIA
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEEXPGOILXN:
+  description: Exports, Oil, NIA, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEEXPNOILCN:
+  description: Exports, Non-Oil, NIA
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEEXPNOILKN:
+  description: Exports, Non-Oil, NIA
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEEXPNOILXN:
+  description: Exports, Non-Oil, NIA, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDETOTTKD:
+  description: Gross Domestic Expenditure (GDE)
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEGDETOTTKN:
+  description: Gross Domestic Expenditure (GDE)
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDETTOTCN:
+  description: Total Demand
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDETTOTKN:
+  description: Total Demand
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDETTOTXN:
+  description: Total Demand, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDIFGOVCN:
+  description: Fixed Domestic Investment, Public
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDIFGOVCOV_:
+  description: Government Capex Coverage Ratio
+  model:
+  - MFMOD
+  unit: null
+NEGDIFGOVKN:
+  description: Fixed Domestic Investment, Public
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDIFGOVXN:
+  description: Fixed Domestic Investment, Public, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDIFPRVCN:
+  description: Fixed Domestic Investment, Private
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDIFPRVKN:
+  description: Fixed Domestic Investment, Private
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDIFPRVXN:
+  description: Fixed Domestic Investment, Private, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDIFTOTCD:
+  description: Fixed Domestic Inv., US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NEGDIFTOTCN:
+  description: Fixed Domestic Inv., LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDIFTOTKD:
+  description: Fixed Domestic Inv., 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEGDIFTOTKN:
+  description: Fixed Domestic Inv., 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDIFTOTXD:
+  description: Fixed Domestic Inv., USD Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: USD Deflator
+NEGDIFTOTXN:
+  description: Fixed Domestic Inv., LCU Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDIKGOVKN:
+  description: Capital stock, Public
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDIKPRVKN:
+  description: Capital stock, Private
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDIKSTKKD:
+  description: Capital stock
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEGDIKSTKKN:
+  description: Capital stock, LCU
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDISTKBCD:
+  description: Change in stock, USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NEGDISTKBCN:
+  description: Change in stock, LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDISTKBKD:
+  description: Change in stock, 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEGDISTKBKN:
+  description: Change in stock, 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDISTKBXN:
+  description: Change in stock, LCU Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEGDITOTLCD:
+  description: Gross Domestic Inv., USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NEGDITOTLCN:
+  description: Gross Domestic Inv., LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEGDITOTLKD:
+  description: Gross Domestic Inv., 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEGDITOTLKN:
+  description: Gross Domestic Inv., 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEGDITOTLXN:
+  description: Gross Domestic Inv., LCU Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEIMPGNFSCD:
+  description: Imp., GNFS (NIA), USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NEIMPGNFSCN:
+  description: Imp., GNFS (NIA), LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEIMPGNFSKD:
+  description: Imp., GNFS (NIA), 2000 US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NEIMPGNFSKN:
+  description: Imp., GNFS (NIA), 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NEIMPGNFSSCCN:
+  description: Imports, Inter SACU, NIA
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NEIMPGNFSXD:
+  description: Imp., GNFS (NIA), USD Price defl. 2000 = 1
+  model:
+  - MFMOD
+  unit: USD Deflator
+NEIMPGNFSXN:
+  description: Imp., GNFS (NIA), LCU Price defl. 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NEKRTPREMFR:
+  description: Capital Cost Risk Premium
+  model:
+  - MFMOD
+  unit: percent/year
+NVAGRTOTLCN:
+  description: Value Added, Agriculture
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVAGRTOTLKN:
+  description: Value Added, Agriculture
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVAGRTOTLXN:
+  description: Value Added, Agriculture, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NVGDPNOILCN:
+  description: Non-Oil GDP
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVGDPNOILKN:
+  description: Non-Oil GDP
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVGDPNOILXN:
+  description: Non-Oil GDP, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NVINDNOILCN:
+  description: Value Added, Non-Oil
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVINDNOILKN:
+  description: Value Added, Non-Oil
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVINDNOILXN:
+  description: Value Added, Non-Oil, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NVINDTOTLCN:
+  description: Value Added, Industry
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVINDTOTLKN:
+  description: Value Added, Industry
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVINDTOTLXN:
+  description: Value Added, Industry, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NVOILCONSKN:
+  description: Oil Consumption
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVOILPRODKN:
+  description: Oil Production
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVOILTOTLCN:
+  description: Value Added, Oil
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVOILTOTLKN:
+  description: Value Added, Oil
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVOILTOTLXN:
+  description: Value Added, Oil, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NVSRVTOTLCN:
+  description: Value Added, Services
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NVSRVTOTLKN:
+  description: Value Added, Services
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NVSRVTOTLXN:
+  description: Value Added, Services, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NYGDPDISCCD:
+  description: GDP Disc., USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NYGDPDISCCN:
+  description: GDP Disc., LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYGDPDISCKD:
+  description: GDP Disc., 2000 USD mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NYGDPDISCKN:
+  description: GDP Disc., 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPDSCVCN:
+  description: GDP Disc., Production, LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYGDPDSCVKN:
+  description: GDP Disc., Production, constant LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPFCSTCD:
+  description: GDP at Factor Cost
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NYGDPFCSTCN:
+  description: GDP at Factor Cost
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYGDPFCSTKN:
+  description: GDP at Factor Cost
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPFCSTXN:
+  description: GDP at Factor Cost, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NYGDPGAPTOT_:
+  description: Output Gap, oil producer, oil and non-oil economy
+  model:
+  - MFMOD
+  unit: proportion of total output
+NYGDPGAP_:
+  description: Output Gap (%)
+  model:
+  - MFMOD
+  unit: proportion of total output
+NYGDPMKTPCD:
+  description: GDP, Market Prices, US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, current Prices
+NYGDPMKTPCN:
+  description: GDP, Market Prices, LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYGDPMKTPCP:
+  description: Model Param. NYGDPMKTPCP
+  model:
+  - MFMOD
+  unit: null
+NYGDPMKTPKD:
+  description: GDP, Market Prices, 2000 US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NYGDPMKTPKN:
+  description: GDP, Market Prices, 2000 LCU mn
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPMKTPKP:
+  description: Model Param. NYGDPMKTPKP
+  model:
+  - MFMOD
+  unit: null
+NYGDPMKTPXD:
+  description: GDP, Marker Prices, USD Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: USD Deflator
+NYGDPMKTPXN:
+  description: GDP, Marker Prices, LCU Price defl., 2000 = 1
+  model:
+  - MFMOD
+  unit: LCU Deflator
+NYGDPPOTLKD:
+  description: Potential Output, 2000 US$ mn
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NYGDPPOTLKN:
+  description: Potential Output, constant LCU
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPPOTTKD:
+  description: Potential Output, oil producer, oil and non-oil economy, constant USD
+  model:
+  - MFMOD
+  unit: 1e6 USD, constant Prices
+NYGDPPOTTKN:
+  description: Potential Output, oil producer, oil and non-oil economy, constant LCU
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYGDPTFP:
+  description: Total factor productivity
+  model:
+  - MFMOD
+  unit: null
+NYKRTTOTLXN:
+  description: Rental Rate of Capital, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: null
+NYTAXDISCCN:
+  description: Net indirect taxes discrepancy
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYTAXDISCKN:
+  description: Net indirect taxes discrepancy
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYTAXNINDCN:
+  description: Net Indirect Taxes
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYTAXNINDKN:
+  description: Net Indirect Taxes
+  model:
+  - MFMOD
+  unit: 1e6 LCU, constant Prices
+NYTAXNINDXN:
+  description: Net Indirect Taxes, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: null
+NYWRTTOTLXN:
+  description: Wages, mn LCU, Deflator
+  model:
+  - MFMOD
+  unit: null
+NYYWBTOTLCN:
+  description: Wage Bill
+  model:
+  - MFMOD
+  unit: 1e6 LCU, current Prices
+NYYWBTOTLCN_:
+  description: Labor Share of Income
+  model:
+  - MFMOD
+  unit: Proportion
+PANEUATLS:
+  description: Official exchange rate (LCU per EURO, period avg)
+  model:
+  - MFMOD
+  unit: LCU/EUR
+PANEUATLSK:
+  description: Official exchange rate, Real (LCU per EURO, period avg)
+  model:
+  - MFMOD
+  unit: LCU/EUR
+PANUSATLS:
+  description: Exchange rate
+  model:
+  - MFMOD
+  unit: LCU / USD
+PANUSATLSK:
+  description: Official exchange rate, Real (LCU per US$, period avg)
+  model:
+  - MFMOD
+  unit: LCU/USD
+PCEXN05:
+  description: Consumption Price, Harmonized
+  model:
+  - MFMOD
+  unit: null
+PMKEY:
+  description: Model Param. Forecast Import Price
+  model:
+  - MFMOD
+  unit: null
+PSTAR:
+  description: Marginal Cost of Production
+  model:
+  - MFMOD
+  unit: null
+PXKEY:
+  description: 'Model Param. Forecast Export Price '
+  model:
+  - MFMOD
+  unit: null
+PXKEYEX:
+  description: Export Keyfitz Price, excl. Oil
+  model:
+  - MFMOD
+  unit: null
+REER:
+  description: Real Effective Exchange Rate (REER)
+  model:
+  - MFMOD
+  unit: null
+REMT_IN:
+  description: Remittances Inflow Indicator
+  model:
+  - MFMOD
+  unit: null
+REMT_OUT:
+  description: Remittances Outflow Indicator
+  model:
+  - MFMOD
+  unit: null
+SPPOP1564TO:
+  description: Labor force (15-64)
+  model:
+  - MFMOD
+  unit: null
+SPPOPTOTL:
+  description: Population (mn)
+  model:
+  - MFMOD
+  unit: millions
+SPPOPWORK:
+  description: Population, 15+
+  model:
+  - MFMOD
+  unit: millions
+TOT:
+  description: Terms of Trade
+  model:
+  - MFMOD
+  unit: null
+UCK:
+  description: User Cost of Capital
+  model:
+  - MFMOD
+  unit: null
+VELOCITY:
+  description: Velocity of Money
+  model:
+  - MFMOD
+  unit: null
+WLDFALUMINUM:
+  description: Aluminum, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFBANANA_US:
+  description: Banana, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFBEEF:
+  description: Beef, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCOAL_AUS:
+  description: Coal, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCOCOA:
+  description: Cocoa, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCOFFEE_COMPO:
+  description: Coffee, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCOPPER:
+  description: Copper, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCOTTON_A_INDX:
+  description: Cotton, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFCRUDE_PETRO:
+  description: Crude Oil, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFGOLD:
+  description: Gold, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFGRNUT:
+  description: Groundnut Oil, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFGRNUT_OIL:
+  description: Groundnut, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFIRON_ORE:
+  description: Iron Ore, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFISTL_JP_INDX:
+  description: Steel, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFLEAD:
+  description: Lead, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFLOGS_MYS:
+  description: Logs, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFMAIZE:
+  description: Maize, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFNGAS_EUR:
+  description: Gas, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFNICKEL:
+  description: Nickel, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFORANGE:
+  description: Orange, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFPALM_OIL:
+  description: Palm Oil, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFPLYWOOD:
+  description: Plywood, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFRICE_05:
+  description: Rice, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFRUBBER1_MYSG:
+  description: Rubber, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSAWNWD_MYS:
+  description: Sawnwood, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSILVER:
+  description: Silver, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSORGHUM:
+  description: Sorghum, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSOYBEANS:
+  description: Soybeans, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSOYBEAN_MEAL:
+  description: Soybeans, Meal, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSOYBEAN_OIL:
+  description: Soybeans, Oil, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFSUGAR_WLD:
+  description: Sugar, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFTEA_AVG:
+  description: Tea, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFTIN:
+  description: Tin, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFTOBAC_US:
+  description: Tobacco, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFWHEAT_US_HRW:
+  description: Wheat, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFWOODPULP:
+  description: Woodpulp, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+WLDFZINC:
+  description: Zinc, Price
+  model:
+  - MFMOD
+  unit: USD/physical unit
+XMKT:
+  description: Model Param. XMKT
+  model:
+  - MFMOD
+  unit: null
+XMKT_GR:
+  description: Trading Partner Growth
+  model:
+  - MFMOD
+  unit: null

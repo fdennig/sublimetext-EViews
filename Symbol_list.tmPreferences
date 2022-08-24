@@ -9,7 +9,8 @@
 		source.EViews entity.name.identity,
 		source.EViews entity.name.mnemonic,
 		source.EViews entity.name.series, 
-		source.EViews entity.name.programvariable
+		source.EViews entity.name.programvariable,
+		source.yaml entity.name.tag.yaml
 	</string>
 	<key>settings</key>
 	<dict>
