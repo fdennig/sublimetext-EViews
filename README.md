@@ -17,7 +17,7 @@ EViews language support for [Sublime Text](http://www.sublimetext.com/)
 Currently only manual installation possible.
 
 1. Download `.zip` file of this folder (`clone`)
-2. Unzip to a folder named `Eviews`
+2. Unzip to a folder named `EViews`
 3. Move this folder to the `Packages` directory, which can be opened through the Sublime menu `Preferences --> Browse Packages...`
 
 
