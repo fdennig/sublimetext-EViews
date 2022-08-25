@@ -91,7 +91,7 @@ One way to access snippets is through the *Command Palette* (`ctrl`+`shift`+`p`)
 
 The two instances of `name` will be highlighted, so that the programmer can change them by directly typing a better name. Subsequently hitting `tab` will highlight `%solve_start`, and a further `tab` highlights `%solve_end`, in case the programmer uses other phrases for the sample limits and wants to change them quickly.
 
-When a snippet command description is displayed in the dropdown list, the *tab-trigger* is also displayed at the right edge of the dropdown menu. The *tab-trigger* is a short string inserted in the program that gets replaced with the entire code snippet if the programmer hits `tab` right after typing the string. For the snippet above the tab-trigger is the word `scenario`. Type it in the code and hit `tab`, and the snippet created a new scenario will be inserted in its position.
+When a snippet command description is displayed in the dropdown list, the *tab-trigger* is also displayed at the right edge of the dropdown menu. The *tab-trigger* is a short string inserted in the program that gets replaced with the entire code snippet if the programmer hits `tab` right after typing said string. For the snippet above the tab-trigger is the word `scenario`. Type it in the code and hit `tab`, and the snippet created a new scenario will be inserted in its position.
 
 I have had to type `{%cty}` so many times, that the tab-trigger `ct` + `tab` now does the same job. Try it.
 
