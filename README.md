@@ -76,7 +76,7 @@ Typing `arthcm` into the *Command Palette* exposes the *Arithmetic* command. It 
 
 ### Snippets
 
-Snippets are code fragments that are inserted into the text at the position of the cursor then the corresponding snippet command is called. 
+Snippets are code fragments that are inserted at the current position of the cursor when the corresponding snippet command is called. 
 
 One way to access snippets is through the *Command Palette* (`ctrl`+`shift`+`p`), by typing `snippet` along with some other letters contained in the description of the snippet. For example, the code snippet used to create a new scenario initiated to the baseline, and solving it (with the user's choice of overrides and excludes) is saved in the package with the description "Snippet: EViews: solve scenario initiated to baseline". So typing any sequence of letters from that description will very soon display exactly that snippet's command at the top of the dropdown list. In my case the input `evscb` was sufficient. Hitting `Enter` will then insert, at the cursor, the code
 
