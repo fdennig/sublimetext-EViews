@@ -17,7 +17,7 @@ EViews language support for [Sublime Text](http://www.sublimetext.com/)
 Currently only manual installation possible.
 
 1. Download `.zip` file of this folder (`clone`)
-2. Unzip to a folder named `Eviews`
+2. Unzip to a folder named `EViews`
 3. Move this folder to the `Packages` directory, which can be opened through the Sublime menu `Preferences --> Browse Packages...`
 
 
@@ -76,7 +76,7 @@ Typing `arthcm` into the *Command Palette* exposes the *Arithmetic* command. It 
 
 ### Snippets
 
-Snippets are code fragments that are inserted into the text at the position of the cursor then the corresponding snippet command is called. 
+Snippets are code fragments that are inserted at the current position of the cursor when the corresponding snippet command is called. 
 
 One way to access snippets is through the *Command Palette* (`ctrl`+`shift`+`p`), by typing `snippet` along with some other letters contained in the description of the snippet. For example, the code snippet used to create a new scenario initiated to the baseline, and solving it (with the user's choice of overrides and excludes) is saved in the package with the description "Snippet: EViews: solve scenario initiated to baseline". So typing any sequence of letters from that description will very soon display exactly that snippet's command at the top of the dropdown list. In my case the input `evscb` was sufficient. Hitting `Enter` will then insert, at the cursor, the code
 
@@ -91,7 +91,7 @@ One way to access snippets is through the *Command Palette* (`ctrl`+`shift`+`p`)
 
 The two instances of `name` will be highlighted, so that the programmer can change them by directly typing a better name. Subsequently hitting `tab` will highlight `%solve_start`, and a further `tab` highlights `%solve_end`, in case the programmer uses other phrases for the sample limits and wants to change them quickly.
 
-When a snippet command description is displayed in the dropdown list, the *tab-trigger* is also displayed at the right edge of the dropdown menu. The *tab-trigger* is a short string inserted in the program that gets replaced with the entire code snippet if the programmer hits `tab` right after typing the string. For the snippet above the tab-trigger is the word `scenario`. Type it in the code and hit `tab`, and the snippet created a new scenario will be inserted in its position.
+When a snippet command description is displayed in the dropdown list, the *tab-trigger* is also displayed at the right edge of the dropdown menu. The *tab-trigger* is a short string inserted in the program that gets replaced with the entire code snippet if the programmer hits `tab` right after typing said string. For the snippet above the tab-trigger is the word `scenario`. Type it in the code and hit `tab`, and the snippet created a new scenario will be inserted in its position.
 
 I have had to type `{%cty}` so many times, that the tab-trigger `ct` + `tab` now does the same job. Try it.
 
