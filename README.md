@@ -101,6 +101,10 @@ There are probably still some mistakes in these, so if you find those, please le
 
 ### MFMOD
 
-The package contains some MFMOD specific features. 
+The package contains the following MFMOD specific features:
+
+- brief MFMOD tutorial and reference files
+- model specific YAML based variable database creation and cross referencing feature
+- MFMOD specific
 
 
