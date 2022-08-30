@@ -105,6 +105,45 @@ The package contains the following MFMOD specific features:
 
 - brief MFMOD tutorial and reference files
 - model specific YAML based variable database creation and cross referencing feature
-- MFMOD specific
+- MFMOD specific snippets
 
+
+### Sublime
+
+Sublime text has a lot of built in functionality to simplify programming tasks. I find it most useful in avoiding repetitive tasks and in replacing tedious point-and-click or point and select actions with the mouse. You might find other features helpful. The only way to find out if the built in functionality makes your programming more efficient is to find out about the functionality. 
+
+Good resources for that purpose are 
+- The [editing](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/editing/editing.html) and [file navigation](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/file_management/file_navigation.html) sections of the [Sublime Text Unofficial Documentation](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/index.html)
+- The Edit, Selection, Find, View, and Goto menus at the top of the Sublime Text window
+- Keyboard shortcut compilations such as [this](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/keyboard_shortcuts_win.html) and [this](https://shortcuts.design/tools/toolspage-sublimetext/)
+
+#### My top ten features
+
+|    |     |     |
+|--- | --- | --- | 
+| (multiple) selection | `Ctrl` + `D` | strike this several times in a row and see what happens |
+| duplicate line(s) | `Ctrl` + `Shift` + `D` | does as advertised |
+| comment/uncomment line | `Ctrl` + `/` |   |
+| select entire line | `Ctrl` + `L` |   |
+| move line up | `Ctrl` + `Shift` + `↑` | swaps position of current line with line above   |
+| move line down | `Ctrl` + `Shift` + `↓` | swaps position of current line with line below   |
+| Transform selection to uppercase | `Ctrl` + `KU` |  |
+| Transform selection to lowercase | `Ctrl` + `KL` |  |
+| Rename current file | type "rename" into the `Command Palette`  | strike `Ctrl`+`Shift`+`P` for command palette |
+| Compare side-by-side | type "compare with" into the `Command Palette` | this requires adding the `Compare side-by-side` via `Package Control` |
+
+#### Adding packages
+
+On top of the built in functionality, Sublime has an entire ecosystem of packages that provide additional features, like this package for EViews. Widely used packages can be installed directly via the `Command Palette` with `Package Control`.
+
+First, install `Package Control`:
+
+1. Bring up the `Command Palette` with `Ctrl` + `Shift` + `P`
+2. Type "Install Package Control" and hit `Enter`
+
+With `Package Control` installed, adding packages is done by
+
+1. Bringing up the `Command Palette`
+2. Typing "Install Package" and hitting `Enter`
+3. Typing the name of the package (e.g. `Compare Side-by-Side`)
 
