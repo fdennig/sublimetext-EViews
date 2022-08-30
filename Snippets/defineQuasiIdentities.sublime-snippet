@@ -2,9 +2,9 @@
 	<content><![CDATA[
 ' Define c_spec_qi as the string list of quasi identities estimated relationships that behave like identities
 string ${1:c_spec_qi}
-%vars=model.@stochastic
+%vars=${2:{%cty\}}.@stochastic
 for %eqn {%vars}
-	if @isobject("_",+%eqn) then
+	if @isobject("_"+%eqn) then
 	   %tempname=_{%eqn}.@subst
 	   if @right(%tempname,4)="DUMH" or @right(%tempname,8)="DUMH_BOP" or @right(%tempname,8)="DUMH_FSC" or @right(%tempname,8)="DUMH_NIA" then  
 			${1:c_spec_qi} = ${1:c_spec_qi}+ " " + %eqn
