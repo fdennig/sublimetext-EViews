@@ -111,7 +111,7 @@ class GlossaryFileInputHandler(sublime_plugin.ListInputHandler):
     def list_items(self):
         folderList = self.view.window().folders()
         fileList = []
-        fileList.append(("MFMOD Glossary (default)", os.path.join(sublime.packages_path(),"EViews","MFMOD-notes","MFMODvariables.yml")))
+        fileList.append(("MFMOD Glossary (default)", os.path.join(sublime.packages_path(),"EViews","MFMODresources","MFMODvariables.yml")))
         for folder in folderList:
             for (dirpath, dirnames, filenames) in os.walk(folder):
                 for name in filenames:

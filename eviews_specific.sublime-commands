@@ -8,15 +8,39 @@
       },
 
       {
-          "caption": "MFMOD: merge vars",
+          "caption": "EViews: merge vars",
           "command": "pull_descriptions_for_varlist",
           "args"   : {}
       },
 
       {
-          "caption": "MFMOD: Add MFMOD-notes",
+          "caption": "EViews: Add MFMODresources",
           "command": "add_tutorial_to_project",
           "args"   : {}
-      }
+      },
+      
+      {
+          "caption": "EViews: arithmetic",
+          "command": "arithmetic_eviews",
+          "args"   : {}
+      },
+
+      {
+          "caption": "EViews: Vars from selection",
+          "command": "select_vars_from_string",
+          "args"   : {}
+      },
+
+      {
+          "caption": "EViews: Open equation extractor code",
+          "command": "equation_extractor",
+          "args"   : {}
+      }, 
+
+      {
+          "caption": "EViews: Open MFMOD variable dictionary",
+          "command": "mfmod_vars",
+          "args"   : {}
+      }, 
       
 ]

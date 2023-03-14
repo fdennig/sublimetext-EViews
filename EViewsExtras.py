@@ -7,7 +7,7 @@ import sublime_plugin
 class AddTutorialToProjectCommand(sublime_plugin.WindowCommand):
     def run(self):
         plugin_dir = os.path.dirname(os.path.realpath(__file__))
-        tutorial_dir = os.path.join(plugin_dir, 'MFMOD-notes')
+        tutorial_dir = os.path.join(plugin_dir, 'MFMODresources')
         pathobj = {"path": tutorial_dir}
         project_data = self.window.project_data()
         print(str(project_data))
@@ -29,7 +29,7 @@ class AddTutorialToProjectCommand(sublime_plugin.WindowCommand):
                     </style>
                     <h1> Confirmation </h1>
                     <p>
-                        You have created project including MFMOD-notes.
+                        You have created project including MFMODresources.
                     <br> Now add the folder with codebase and save project
                     </p>
                 </body>
@@ -50,7 +50,7 @@ class AddTutorialToProjectCommand(sublime_plugin.WindowCommand):
                             div.message {padding: 5px;}
                         </style>
                         <div class="message">
-                            You have already added MFMOD-notes to this project
+                            You have already added MFMODresources to this project
                         </div>
                     </body>
                 """
@@ -73,8 +73,75 @@ class AddTutorialToProjectCommand(sublime_plugin.WindowCommand):
                         </style>
                         <h1> Confirmation </h1>
                         <p>
-                            You have now added the MFMOD-notes to this project
+                            You have now added the MFMODresources to this project
                         </p>
                     </body>
                 """
                 self.window.active_view().show_popup(html, flags = 24)
+
+def load_resource(name):
+    """Return file contents for files within the package root folder."""
+    try:
+        return sublime.load_resource('Packages/{}/{}'.format(__package__, name))
+    except Exception:
+        log("Error while load_resource('%s')" % name)
+        traceback.print_exc()
+        return ''
+
+def exists_resource(resource_file_path):
+    """Check if resource exists."""
+    filename = os.path.join(os.path.dirname(sublime.packages_path()), resource_file_path)
+    return os.path.isfile(filename)
+
+def new_view(window, text, scratch=False):
+    """
+    Create a new view and paste text content.
+
+    Return the new view that can optionally can be set as scratch.
+    """
+
+    new_view = window.new_file()
+    if scratch:
+        new_view.set_scratch(True)
+    new_view.run_command('append', {
+        'characters': text,
+    })
+    return new_view
+
+class EquationExtractorCommand(sublime_plugin.TextCommand):
+    """Open the equation extractor prg"""
+
+    def run(self, edit):
+        """Execute command."""
+        lines = '\n'.join(load_resource('MFMODresources/equationExtractor.prg').splitlines())
+        view = new_view(self.view.window(), lines, scratch=True)
+        view.set_name("Extraction subroutines")
+
+        # Set syntax file
+        syntax_files = [
+            os.path.join(plugin_dir, "EViews.sublime-syntax")
+        ]
+        for file in syntax_files:
+            if exists_resource(file):
+                view.set_syntax_file(file)
+                break  # Done if any syntax is set.
+
+        sublime.status_message('Extraction subroutines opened')
+
+
+class MfmodVarsCommand(sublime_plugin.TextCommand):
+    """Open the equation extractor prg"""
+
+    def run(self, edit):
+        """Execute command."""
+        lines = '\n'.join(load_resource('MFMODresources/MFMODvariables.yml').splitlines())
+        view = new_view(self.view.window(), lines, scratch=True)
+        view.set_name("MFMOD variables")
+
+        # Set syntax file
+        file = "Packages/YAML/YAML.sublime-syntax"
+        if exists_resource(file):
+            view.set_syntax_file(file)
+            break  # Done if any syntax is set.
+
+        sublime.status_message('MFMOD dictionary opened')
