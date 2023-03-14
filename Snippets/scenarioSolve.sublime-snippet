@@ -7,7 +7,7 @@
 smpl ${2:%solve_start} ${3:%fcst_end}
 {%cty}.addassign(i,c) @stochastic
 {%cty}.addinit(v=n) @stochastic
-{%cty}.solve(s=d,d=d,o=b,i=a,c=1e-10,v=t,g=n)
+{%cty}.solve(s=d,d=d,o=g,i=a,c=1e-10,v=t,g=n)
 	]]></content>
 	<tabTrigger>scenario</tabTrigger>
 	<description>EViews: solve scenario initiated to baseline</description>

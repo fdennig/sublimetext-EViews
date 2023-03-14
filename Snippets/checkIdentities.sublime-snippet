@@ -4,7 +4,8 @@
 ' set !check_id to correct variable name
 if ${2:!check_id} = 1 then
 	' creates the AFs for the identities and collects them in ident_a
-	${1:\{%cty\}}.addassign(i,c) @identity
+	smpl %solve_start @last
+	${1:\{%cty\}}.addassign @identity
 	${1:\{%cty\}}.addinit(v=n) @identity
 	string ident = ${1:\{%cty\}}.@identity	
 	string ident_a = @wcross(ident,"_a")

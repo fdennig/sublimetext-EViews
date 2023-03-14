@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+import ${1:%pathdata} range=${2:sheet} ${3:byrow} colhead=${4:1} ${5:namepos=lastatt}  na="#N/A" @freq A ${6:2000} @smpl @all
+	]]></content>
+	<tabTrigger>import</tabTrigger>
+	<description>EViews: import data</description>
+	<scope>source.EViews</scope>
+</snippet>
+
+

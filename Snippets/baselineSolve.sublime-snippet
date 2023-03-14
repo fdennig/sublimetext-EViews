@@ -1,17 +1,10 @@
 <snippet>
 	<content><![CDATA[
-%solution_type = d ' deterministic
-%dynamics 	   = d ' dynamic
-%solver 	   = b ' Broyden
-%initials      = a ' actuals
-%tolerance     = 1e-12
-%verbose       = t ' true
-%signfDigits   = n ' do not round
+
 smpl ${1:%solve_start} ${2:%fcst_end}
 {%cty}.scenario "baseline"
-{%cty}.addassign(i,c) @stochastic
-{%cty}.addinit(v=n) @stochastic
-{%cty}.solve(s={%solution_type},d={%dynamics},o={%solver},i={%initials},c={%tolerance},v={%verbose},g={%signfDigits})   
+{%cty}.solve(s=d,d=d,o=g,i=a,c=1e-10,v=t,g=n)  
+logmsg Solved full {%cty} model out-of-sample {%fcst_start} {%fcst_end}
 	]]></content>
 	<tabTrigger>baseline</tabTrigger>
 	<description>EViews: solve baseline</description>

@@ -13,7 +13,7 @@ next
 ' sets AFs for quasi-identities to zero. presumes c_spec_qi has been defined
 smpl %hist_end+1 @last
 for %var {c_spec_qi}
-	series model{%var}_A=0
+	series {%cty\}{%var}_A=0
 next
 	]]></content>
 	<tabTrigger>extendaf</tabTrigger>
