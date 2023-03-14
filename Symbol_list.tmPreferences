@@ -5,6 +5,7 @@
 	<key>scope</key>
 	<string>
 		source.EViews entity.name.function,
+		source.EViews entity.name.estimatedEquation,
 		source.EViews entity.name.equation,
 		source.EViews entity.name.identity,
 		source.EViews entity.name.mnemonic,

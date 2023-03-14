@@ -6,12 +6,9 @@ file_extensions:
 scope: source.EViews
 
 variables:
-  legal_names: '\b[a-zA-Z_][\w\$]*\b'
+  legal_names: '[a-zA-Z_][\w\$]*\b'
 
 contexts:
-  # prototype:
-  #   - include: comments
-
   main:
     - include: comments
     - include: strings
@@ -49,7 +46,7 @@ contexts:
     - match: '(?i)(\b(call|clearerrs|else|endif|exec|exitloop|for|if|include|logclear|logmode|logmsg|logsave|next|open|optimize|output|poff|pon|program|return|run|sleep|spawn|seterr|seterrcount|setmaxerrs|statusline|step|stop|then|tic|to|toc|wend|while|xclose|xget|xlog|xopen|xput|xrun)\b)'
       scope: keyword.control.EViews
     - match: '(?i)(\b(add|addarrow|addassign|addin|adduo|addrect|addellipse|addinit|addover|addtext|adjust|align|append|autoarma|axis|bpf|classify|clear|clearhist|cleartext|comment|control|copyrange|copytable|datelabel|ddloadtmpl|ddrowopts|ddsavetmpl|ddtabopts|define|delete|deletecol|deleterow|distdata|draw|drawdefault|drop|droplink|dtabopts|ets|exclude|extract|factnames|fetch|fill|fit|flatten|forcavg|forceval|forecast|getglobalc|graphmode|horizindent|hpf|innov|insert|insertcol|insertobs|insertrow|ipolate|label|leftmargin|legend|linkto|log|makecoint|makederivs|makeendog|makefilter|makegarch|makegrads|makegraph|makegroup|makelimits|makeloglike|makemap|makemodel|makepanpcomp|makepcomp|makeregs|makeresids|makergmprobs|makescores|makesignals|makestates|makestats|makesystem|maketransprobs|makewhiten|map|merge|move|name|olepush|options|override|reinclude|remove|replace|replacelink|replacevar|resample|revert|rotateclear|scenario|seas|set|setattr|setbpelem|setcollabels|setconvert|setelem|setfillcolor|setfont|setformat|setglobalc|setheight|setindent|setjust|setlines|setmerge|setobslabel|setprefix|setrowlabels|setsuffix|settextcolor|settrace|setupdate|setwidth|smooth|solve|solveopt|stochastic|tablemode|template|textdefault|title|topmargin|trace|track|tramoseats|unlink|update|updatecoefs|vertindent|vertspacing|width|write|x11|x12|x13|abtest|anticov|archtest|area|arlm|arma|arroots|auto|band|bar|bdstest|block|boundstest|boxplot|breakspec|breaktest|buroot|cause|cdtest|cellipse|checkderivs|chow|cinterval|coefcov|coefscale|coint|cointgraph|cointrep|compare|cor|correl|correlsq|cov|cross|cvardecomp|decomp|depfreq|derivs|describe|display|displayname|distplot|dot|dtable|edftest|eigen|endog|endogtest|eqs|errbar|facbreak|fitstats|fitted|fixedtest|freq|garch|grads|hettest|hilo|hist|icgraph|ictable|impulse|infbetas|infstats|instsum|jbera|laglen|line|loadings|lrcov|lrvar|lvageplot|maxcor|means|mixed|msa|msg|multibreak|observed|orthogtest|output|pancov|panpcomp|partcor|pcomp|pie|predict|qqplot|qrprocess|qrslope|qrsymm|qstats|ranhaus|rcomptest|reduced|representations|reset|residcor|residcov|resids|results|rgmprobs|rls|rotate|rotateout|scat|scatmat|scatpair|scores|seasplot|sheet|signalgraphs|smc|spec|spike|statby|statefinal|stategraphs|stateinit|stats|structure|testadd|testbtw|testby|testdrop|testexog|testfit|testlags|teststat|transprobs|ubreak|uroot|usage|varinf|vars|vratio|wald|weakinst|white|xyarea|xybar|xyline|xypair|ar|ccopy|cd|cfetch|clabel|close|colplace|copy|d|db|dbcopy|dbcreate|dbdelete|dbopen|dbpack|dbrebuild|dbrename|delete|dlog|do|driconvert|exit|expand|fetch|freeze|frml|genr|hconvert|hfetch|hlabel|import|importmat|importtbl|load|ma|matplace|mtos|na|nrnd|nrnd|optsave|optset|pageappend|pagecontract|pagecopy|pagecreate|pagedelete|pageload|pagerefresh|pagerename|pagesave|pageselect|pagestack|pagestruct|pageunlink|pageunstack|param|pdl|print|range|read|rename|rnd|rnd|rndint|rndseed|rowplace|sar|save|setcell|setcolwidth|setline|show|sma|sort|stom|stomna|store|tabplace|ttom|unlink|wfclose|wfcompare|wfcreate|wfdetails|wfopen|wfrefresh|wfsave|wfselect|wfstats|wfunlink|wfuse|workfile|write)\b)'
-      scope: keyword.other.EViews
+      scope: variable.function.EViews
 
   # block-statements:
     # - match: '\b(if|while)\b'
@@ -66,7 +63,7 @@ contexts:
       push:
         - meta_scope: meta.function.EViews
         - match: '{{legal_names}}(?=\()'
-          scope: entity.name.function.EViews meta.generic-name.EViews
+          scope: entity.name.function.EViews
           push:
             - match: \(
               scope: meta.function.parameters.EViews punctuation.section.parameters.begin.EViews
@@ -104,7 +101,7 @@ contexts:
         - meta_scope: meta.qualified-name.EViews meta.function-call.EViews
         - meta_content_scope: variable.function.EViews
         - match: '({{legal_names}})'
-          scope: variable.function.EViews meta.generic-name.EViews
+          scope: variable.function.EViews
           pop: true
 
   equations:
@@ -112,18 +109,36 @@ contexts:
       scope: storage.type.object.EViews
       push:
         - meta_content_scope: meta.equation.EViews
-        - match: '({{legal_names}}|({%{{legal_names}}}))+'
-          scope: entity.name.equation.EViews meta.generic-name.EViews
+        - match: '_'
+          scope: punctuation.definition.equation.begin.EViews
+        - match: '(?<=_)({{legal_names}}|({%{{legal_names}}}))+'
+          scope: entity.name.estimatedEquation.EViews
           push:
             - match: '\n'
               pop: 2
             - match: '(?='')'
-              embed: comments
+            - include: comments
               escape: $\n?
             - include: keywords
             - include: varsetal
             - include: curly-braces
             - include: numeric
+    - match: '(?i)(\.append )(?!\s*@identity)'
+      scope: variable.function.EViews
+      push:
+          - meta_content_scope: meta.equation.EViews
+          - match: '[^ ].+[^ ](?= *=)'
+            scope: entity.name.equation.EViews
+            push:
+              - match: '\n'
+                pop: 2
+              - match: '(?='')'
+              - include: comments
+                escape: $\n?
+              - include: keywords
+              - include: varsetal
+              - include: curly-braces
+              - include: numeric
 
   mnemonics:
     - match: '(?i)\b(mnemon)\b'
@@ -131,7 +146,7 @@ contexts:
       push:
         - meta_content_scope: meta.mnemonic.EViews
         - match: '{{legal_names}}'
-          scope: entity.name.mnemonic.EViews meta.generic-name.EViews
+          scope: entity.name.mnemonic.EViews 
           push:
             - match: '\n'
               pop: 2
@@ -141,7 +156,7 @@ contexts:
       push:
         - meta_content_scope: meta.programvariable.Eviews
         - match: (!|%){{legal_names}}(?=\s*=)
-          scope: entity.name.programvariable.EViews meta.generic-name.EViews
+          scope: entity.name.programvariable.EViews
           pop: 1
 
   series:
@@ -150,41 +165,42 @@ contexts:
       push:
         - meta_content_scope: meta.series.EViews
         - match: '({{legal_names}}|({%{{legal_names}}}))+'
-          scope: entity.name.series.EViews meta.generic-name.EViews
+          scope: entity.name.series.EViews variable.other
           push:
             - match: '\n'
               pop: 2
             - match: '(?='')'
-              embed: comments
-              escape: $\n?
-            - include: keywords
-            - include: varsetal
-            - include: curly-braces
-
-
-  identities:
-    - match: '\s(?i)(@identity)\s+(?={{legal_names}})'
-      scope: meta.function-call.EViews
-      push:
-        - meta_content_scope: meta.identity.EViews
-        - match: '(({{legal_names}})({%{{legal_names}}})*)+'
-          scope: entity.name.identity.EViews meta.generic-name.EViews
-          push:
-            - match: '\n'
-              pop: 2
-            - match: '(?='')'
-              embed: comments
+            - include: comments
               escape: $\n?
             - include: keywords
             - include: varsetal
             - include: curly-braces
             - include: numeric
-    - match: '\s(?i)(@identity)\s+(?={%{{legal_names}}})'
-      scope: meta.function-call.EViews
+
+
+  identities:
+    - match: '(?i)(@identity)(?=\s+{{legal_names}})'
+      scope: storage.type.object.EViews
+      push:
+        - meta_content_scope: meta.identity.EViews
+        - match: '(({{legal_names}})({%{{legal_names}}})*)+'
+          scope: entity.name.identity.EViews
+          push:
+            - match: '\n'
+              pop: 2
+            - match: '(?='')'
+            - include: comments
+              escape: $\n?
+            - include: keywords
+            - include: varsetal
+            - include: curly-braces
+            - include: numeric
+    - match: '(?i)(@identity)(?=\s+{%{{legal_names}}})'
+      scope: storage.type.object.EViews
       push:
         - meta_content_scope: meta.identity.EViews
         - match: '(({%{{legal_names}}})({{legal_names}})*)+'
-          scope: entity.name.identity.EViews meta.generic-name.EViews
+          scope: entity.name.identity.EViews 
           push:
             - match: '\n'
               pop: 2
@@ -229,10 +245,10 @@ contexts:
         0: storage.type.object.EViews
     - match: '(@[a-zA-Z]+)'
       captures:
-        0: meta.function-call.EViews
+        0: variable.function.EViews
     - match: '(?i)(\b(3sls|arch|ardl|binary|breakls|bvar|censored|cointreg|count|ec|fiml|glm|gls|gmm|heckit|ipf|liml|logit|ls|ml|ordered|pace|pf|probit|qreg|robustls|smpl|stepls|sur|svar|switchreg|threshold|tsls|uls|wls|wtsls)\b)'
       captures:
-        0: keyword.other.EViews
+        0: variable.function.EViews #keyword.other.EViews
     - match: '(\+|-|\*|/|\^|<|>|=|,|\.)'
       captures:
         0: keyword.operator.EViews
