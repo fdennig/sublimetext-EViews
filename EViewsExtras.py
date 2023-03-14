@@ -142,6 +142,6 @@ class MfmodVarsCommand(sublime_plugin.TextCommand):
         file = "Packages/YAML/YAML.sublime-syntax"
         if exists_resource(file):
             view.set_syntax_file(file)
-            break  # Done if any syntax is set.
+
 
         sublime.status_message('MFMOD dictionary opened')

@@ -28,8 +28,6 @@ class PrefixInputHandler(sublime_plugin.TextInputHandler):
     def __init__(self,view):
         self.view = view
         self.prefixedList = []
-    # def name(self):
-    #     return "prefix"
 
     def name(self):
         return "prefix"
@@ -46,7 +44,6 @@ class PrefixInputHandler(sublime_plugin.TextInputHandler):
                 prefixedString += text + wx + " \n"
                 prefixedList.append(text + wx)
         self.prefixedList = prefixedList
-        print(self.prefixedList)
         return prefixedString
 
     def next_input(self,args):
@@ -56,7 +53,6 @@ class SuffixInputHandler(sublime_plugin.TextInputHandler):
     def __init__(self,view, prefixedList):
         self.view = view
         self.prefixedList = prefixedList
-
     def name(self):
         return "suffix"
 
