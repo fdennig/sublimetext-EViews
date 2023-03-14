@@ -1,10 +1,12 @@
-# *EViews* Package for Sublime Text
+*EViews* Package for Sublime Text
+=================================
 
-EViews language support for [Sublime Text](http://www.sublimetext.com/)
+[EViews](https://www.eviews.com/) language support for [Sublime Text](http://www.sublimetext.com/)
 
 ## Features
 
 - Syntax highlighting
+- Symbol indexing of *series*, *equations*, *identities*, *program variables* and *subroutines*
 - Build system
 - Snippets
 - Specific support for World Bank developers of MFMOD
@@ -25,8 +27,9 @@ Currently only manual installation possible.
 
 The most powerful feature in Sublime Text is the fuzzy search among different object categories. For example, the shortcut
 
+
 | `Goto Anything` | `Ctrl` + `P` |
-| --- | --- |
+|-----------------|--------------|
 
 displays the *Goto Anything* search bar, providing quick access to any file in the project via a drop-down list that tightens around the target as letters in its name are typed - even if the name is typed incorrectly. The [documentation](https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/file_management/file_navigation.html#goto-anything) elaborates on the various uses of this feature. Navigating to words/variables/lines within a file and across files is massively simplified by this.
 
