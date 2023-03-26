@@ -139,6 +139,12 @@ contexts:
               - include: varsetal
               - include: curly-braces
               - include: numeric
+          - match: '({{legal_names}}|({%{{legal_names}}}))+(?= *\n)'
+            scope: entity.name.equation.EViews
+            push:
+              - match: '\n'
+                pop: 2
+
 
   mnemonics:
     - match: '(?i)\b(mnemon)\b'
